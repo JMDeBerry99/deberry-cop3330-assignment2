@@ -11,8 +11,9 @@ public class solution24 {
         //prompt for both input strings
         String word1 = "";
         String word2 = "";
-        //check if anagram
+
         AnagramChecker checker = new AnagramChecker();
+        checker.isAnagram(word1, word2);
 
         //display if anagrams
 

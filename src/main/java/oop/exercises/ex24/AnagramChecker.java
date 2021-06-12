@@ -4,6 +4,8 @@
  */
 package oop.exercises.ex24;
 
+import java.util.Arrays;
+
 public class AnagramChecker {
     public boolean isAnagram(String word1, String word2)
     {
@@ -17,6 +19,14 @@ public class AnagramChecker {
 
     public boolean sameLetters(String word1, String word2)
     {
-        return true;
+        String word1Sorted = sortByLetter(word1.toLowerCase());
+        String word2Sorted = sortByLetter(word2.toLowerCase());
+        return word1Sorted.equals(word2Sorted);
+    }
+
+    private String sortByLetter(String word) {
+        char[] array = word.toCharArray();
+        Arrays.sort(array);
+        return new String(array);
     }
 }
