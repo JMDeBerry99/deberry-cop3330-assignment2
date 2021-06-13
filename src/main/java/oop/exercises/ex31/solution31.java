@@ -30,7 +30,8 @@ public class solution31 {
         int age = Integer.parseInt(input);
 
         HeartRateChart chart = new HeartRateChart();
-        String output = chart.generate(resting, age);
+        String output = chart.generate(resting, age, 55, 95);
+        System.out.println(output);
     }
 
     public static boolean validateInput(String input)
